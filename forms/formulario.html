@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Interesse</h1>
+
+        <form action="receber.php" method="post">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <div>
+                    <label for="nome"> Nome:</label>
+                    <input id="nome" type="text" name="nome">
+                </div>
+                <div>
+                    <label for="dt">Data Nascimento:</label>
+                    <input id="dt" type="date" name="dt">
+                </div>
+                <div>
+                    <label for="tel">Telefone:</label>
+                    <input id="tel" type="text" name="tel">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" name="email">
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Conhecimentos e Experiências</legend>
+                <div>
+                    <label for="empresa"> Empresa:</label>
+                    <input id="empresa" type="text" name="empresa">
+                </div>
+                <div>
+                    <label for="periodo">Período - </label>
+                    <label for="inicio">De:</label>
+                    <input id="inicio" type="date" name="inicio">
+                    <label for="fim">Até:</label>
+                    <input id="fim" type="date" name="fim">
+                </div>
+                <div>
+                    <label for="cargo">Cargo:</label>
+                    <input id="cargo" type="text" name="cargo">
+                </div>
+                <div>
+                    <label for="funcoes">Funções:</label>
+                    <input id="funcoes" type="text" name="funcoes">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Vagas de Interesse</legend>
+                <div>
+                    <label for="vaga"> Vaga:</label>
+                    <input id="empresa" type="text" name="empresa">
+                </div>
+
+                <div>
+                    <label for="pret_sal">Vaga:</label>
+                    <input id="pret_sal" type="number" name="pret_sal">
+                </div>
+
+                <div>
+                    <label for="vaga"> Pretensão Salarial:</label>
+                    <input id="empresa" type="text" name="empresa">
+                </div>
+
+                <div>
+                    <label for="pret_sal">Pretensão Salarial:</label>
+                    <input id="pret_sal" type="number" name="pret_sal">
+                </div>
+            </fieldset>    
+            <input type="submit" value="Vai!">
+
+        </form>
+    </div>   
+</body>
+</html>
